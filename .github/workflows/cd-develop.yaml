@@ -17,7 +17,7 @@ jobs:
           path: "./dist"
           name: "build-artifact-develop"  
   deploy-job-develop:
-    needs: "build-job=develop"
+    needs: "build-job-develop"
     runs-on: ubuntu-latest
     environment:
       name: "develop-env"
